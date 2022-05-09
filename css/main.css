@@ -12,6 +12,7 @@ html {
   font-family: arial, sans-serif;
   color: rgb(255, 255, 255);
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -68,7 +69,6 @@ html {
   padding: 0 10px;
   border: 2px solid black;
   background-color: #fff;
-  text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.4s;
@@ -148,9 +148,13 @@ html {
   width: 100%;
   height: 50%;
 }
+.article__image:hover {
+  filter: drop-shadow(16px 16px 10px black);
+  cursor: pointer;
+  transition: all 0.5s;
+}
 .article__title {
   font-family: "pt sans", "roboto", "arial", "sans-serif";
-  text-transform: uppercase;
   font-size: 3rem;
   padding: 35px 0 15px;
 }
@@ -235,7 +239,7 @@ html {
   text-align: center;
   font-family: arial, sans-serif;
   letter-spacing: 3px;
-  padding-top: 100px;
+  padding: 50px 0;
   font-size: 40px;
   flex-basis: 25%;
   flex-grow: 1;
@@ -280,6 +284,11 @@ html {
   height: 80%;
   margin: auto;
 }
+.project__image:hover {
+  filter: blur(5px);
+  cursor: pointer;
+  transition: all 0.5s;
+}
 
 .footer {
   flex-basis: 100%;
@@ -302,7 +311,6 @@ html {
 .sm-links__title {
   margin: 20px 0 40px;
   font-size: 2.4rem;
-  text-transform: uppercase;
   font-weight: 400;
   color: #000;
 }

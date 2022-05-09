@@ -1,37 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Mono:wght@200&display=swap');
+@import "main.scss";
 
-$main-color: rgb(238, 125, 144);
-$main-font: 'Roboto Mono', 'sans-serif';
-$font: 'Lato', 'sans-serif';
 
-* {
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: gray;
+    }
+}
+
+.article {
+    &__image-ich {
+        display: block;
+        width: 400px;
+        height: 500px;
+    }
+
+    &__description {
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    &__certificate-title {
+        display: block;
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        margin-bottom: 10px;
+        border: 1px solid black;
+
+    }
+
+}
+
+.article-list__skills {
+    flex-basis: 100%;
+    padding: 10px 0;
+    background-color: rgb(201, 127, 232);
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    text-align: center;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
 }
 
-html {
-    background-image: radial-gradient(rgb(194, 97, 113), rgb(137, 36, 174), rgb(236, 59, 224));
-    background-attachment: fixed;
-    font-family: $main-font;
-    color: white;
+.article-list__skills-cd {
+    flex-basis: 100%;
+    padding: 10px 0;
+    background-color: rgba(201, 127, 232, 0.5);
+    margin: 0;
+    text-align: center;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: flex-start;
-    //pozycja i wielkość
-    max-width: 1000px;
-    min-height: 100vh;
-    margin: 0 auto;
-    //wygląd
-    font-size: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 4px 0 black;
+.article-list__description-skills {
+    font-size: 40px;
+    border: 15px outset rgb(198, 77, 98);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: all 1s;
+        box-shadow: 3px 3px red, -1em 0 0.4em olive;
+        cursor: pointer;
+    }
 }
 
-.menu__list {
+.btn-skills {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    min-height: 15px;
+    max-height: 60px;
+    font-size: 30px;
+    border: 3px outset black;
 
+    &__h3 {
+        color: black;
+    }
 }
+
+

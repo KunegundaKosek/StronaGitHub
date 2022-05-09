@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-
-$main-color: pink;
-$default-font: arial, sans-serif; 
-$special-font: 'pt sans', 'roboto', 'arial', 'sans-serif';
+@import "_variables";
 
 * {
     margin: 0;
@@ -17,6 +12,7 @@ html {
     font-family: $default-font;
     color: rgb(255, 255, 255);
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -80,7 +76,6 @@ html {
         padding: 0 10px;
         border: 2px solid black;
         background-color: #fff;
-        text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
         transition: 0.4s;
@@ -159,11 +154,17 @@ html {
         display: block;
         width: 100%;
         height: 50%;
+
+        &:hover {
+            // -webkit-filter: brightness(100%);
+            filter: drop-shadow(16px 16px 10px black);
+            cursor: pointer;
+            transition: all 0.5s ;
+        }
     }
 
     &__title {
         font-family: $special-font;
-        text-transform: uppercase;
         font-size: 3rem;
         padding: 35px 0 15px;
         .article--small & {
@@ -246,7 +247,7 @@ html {
         text-align: center;
         font-family: arial, sans-serif;
         letter-spacing: 3px;
-        padding-top: 100px;
+        padding: 50px 0;
         font-size:40px;
         flex-basis: 25%;
         flex-grow: 1;
@@ -288,9 +289,15 @@ html {
         width: 80%;
         height: 80%;
         margin: auto;
-        
+
+        &:hover {
+            filter: blur(5px);
+            cursor: pointer;
+            transition: all 0.5s ;
+        }
     }
 }
+
 
 
 .footer {
@@ -315,7 +322,6 @@ html {
     &__title {
         margin: 20px 0 40px;
         font-size: 2.4rem;
-        text-transform: uppercase;
         font-weight: 400;
         color:#000;
     }

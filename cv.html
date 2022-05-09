@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/cv.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery/jquery.scrollTo-master/jquery.scrollTo.min.js"></script>
+    <script src="https://kit.fontawesome.com/a42805eadb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -15,14 +19,171 @@
             <img class="logo__image" src="img/logo.png" alt="logo">
         </div>
 
+        <form action="/" class="search">
+            <input type="text" class="search__input" placeholder="PODAJ WYSZUKANĄ FRAZĘ">
+            <button class="search__btn">Wyszukaj</button>
+        </form>
+
+        <div class="settings">
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-bars"></i></a>
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-bars"></i></a>
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item"><a href="cv.html" class="menu__link">Strona główna</a></li>
+                <li class="menu__item"><a href="cv.html" class="menu__link">cv</a></li>
+                <li class="menu__item"><a href="strona/index2.html" target="_blank" class="menu__link">Archiwum</a></li>
+                <li class="menu__item"><a href="" class="menu__link">kontakt</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Kod</a></li>
             </ul>
         </nav>
 
+        <section class="main-articles">
+            <h1 class="main-articles__intro">
+                <marquee scrollamount="12" scrolldelay="90">Curriculum Vitae</marquee>
+               
+            </h1>
 
+            <article class="article">
+                <img src="img/ja.jpg" alt="" class="article__image-ich">
+            </article>
+
+            <article class="article">
+                <h2 class="article__title">
+                    <p>Kunegunda Kosek</p>
+                    <p>Pastuchów, Dolnośląskie</p>
+                    <p><a href="mailto:kosekkunegunda@wp.pl">kosekkunegunda@wp.pl</a></p>
+                    <p><a href="tel:516217036">516-217-036</a></p>
+                    <p class="article__description">Kończę kurs programowania "Java" w Software Development Academy. Bardzo lubię pisać strony
+                        internetowe i bawić się w JavaScripcie :) Dodatkowo poszerzam swoją wiedzę z książek XYZ oraz
+                        materiałóów dostępnym w internecie. Na udemy przrobiłam 10 różnych kursów oraz zadań związanych
+                        z Frontendem.</p>
+                </h2>
+            </article>
+
+        </section>
+
+        <section class="article-list">
+
+            <h2 class="article-list__skills">
+                <marquee scrollamount="12" scrolldelay="90">Umiejętności</marquee>
+            </h2>
+            <article class="article article--small article-list__article">
+                <img src="img/javaScript.png" alt="" class="article__image">
+                <h2 class="article__title">JavaScript</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/html.png" alt="" class="article__image">
+                <h2 class="article__title">HTML5</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/css.png" alt="" class="article__image">
+                <h2 class="article__title">CSS</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/sass.png" alt="" class="article__image">
+                <h2 class="article__title">SCSS</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/bootstrap.png" alt="" class="article__image">
+                <h2 class="article__title">Bootstrap</h2>
+            </article>
+
+
+            <article class="article article--small article-list__article">
+                <img src="img/git.webp" alt="" class="article__image">
+                <h2 class="article__title">Git</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/react.png" alt="" class="article__image">
+                <h2 class="article__title">React</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/sql.avif" alt="" class="article__image">
+                <h2 class="article__title">Bazy danych SQL</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/fetch.jpg" alt="" class="article__image">
+                <h2 class="article__title">Ajax fetch</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/bem.jpg" alt="" class="article__image">
+                <h2 class="article__title">Metodologia BEM</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/java.jpg" alt="" class="article__image">
+                <h2 class="article__title">Java</h2>
+            </article>
+
+
+            <article class="article article--small article-list__article">
+                <img src="img/http.jpg" alt="" class="article__image">
+                <h2 class="article__title">Protokół HTTP</h2>
+            </article>
+
+            <h2 class="article-list__skills-cd">
+                <marquee scrollamount="12" scrolldelay="90">W trakcie nauki</marquee>
+            </h2>
+
+            <article class="article article--small article-list__article">
+                <img src="img/webpack.png" alt="" class="article__image">
+                <h2 class="article__title">Webpack</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/nodejs.svg" alt="" class="article__image">
+                <h2 class="article__title">NodeJS</h2>
+            </article>
+
+            <article class="article article--small article-list__article">
+                <img src="img/angular.png" alt="" class="article__image">
+                <h2 class="article__title">Angular</h2>
+            </article>
+
+
+            <button class="btn-skills">
+                <a id="description-skills" href="#">
+                    <h3 class="btn-skills__h3">Zobacz opis umiejętności</h3>
+                </a>
+            </button>
+
+            <section class="article-list">
+
+                <h2 class="article-list__skills">
+                    <marquee scrollamount="12" scrolldelay="90">Certyfikaty</marquee>
+                </h2>
+
+                
+
+                
+            </section>
+
+            <article id="hier" class="description-skills">
+
+               
+            </article>
+
+
+
+
+
+
+
+
+
+        </section>
     </div>
-    
+    <!-- <script src="scroll.js"></script> -->
 </body>
+
 </html>
